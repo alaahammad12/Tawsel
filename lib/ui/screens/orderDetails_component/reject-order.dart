@@ -141,7 +141,7 @@ class _reject_orderState extends State<reject_order> {
         ),
         Text(
           " 0145220515",
-          style: TextStyle(fontFamily: 'Cairo-Regulaer\ ', fontSize: 20),
+          style: TextStyle(fontFamily: 'Cairo-Regular ', fontSize: 20),
         ),
         OutlinedButton(
             onPressed: (() {}),
