@@ -19,18 +19,6 @@ class _homepageState extends State<homepage> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // bottomNavigationBar: BottomNavigationBar(
-      //     currentIndex: 0,
-      //     onTap: (index) {
-      //       setState(() {
-      //         index = index;
-      //       });
-      //     },
-      //     backgroundColor: Colors.amber,
-      //     items: [
-      //       BottomNavigationBarItem(icon: Icon(Icons.ac_unit_outlined)),
-      //       BottomNavigationBarItem(icon: Icon(Icons.abc_sharp)),
-      //     ]),
       body: SafeArea(
         child: Column(
           children: [

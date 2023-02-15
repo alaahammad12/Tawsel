@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:tawsel/ui/screens/homepage/home_page_component/currentorder.dart';
 import 'package:tawsel/ui/screens/homepage/home_page_component/order.dart';
-import 'package:tawsel/ui/screens/orderDetails_component/reject-order.dart';
+import 'package:tawsel/ui/screens/orderDetails/orderDetails_component/reject-order.dart';
 
 class order_Details extends StatefulWidget {
   const order_Details({super.key});
@@ -26,7 +27,7 @@ class _order_DetailsState extends State<order_Details> {
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(5.0),
@@ -40,9 +41,18 @@ class _order_DetailsState extends State<order_Details> {
                         ),
                       ),
                     ),
+                    SizedBox(
+                      width: width * 0.35,
+                    ),
                     Text(
                       "تفاصيل الطلب",
                       style: TextStyle(fontFamily: 'Cairo-Bold', fontSize: 20),
+                    ),
+                    GestureDetector(
+                      child: Icon(Icons.arrow_forward),
+                      onTap: (() {
+                        Get.back();
+                      }),
                     )
                   ],
                 ),

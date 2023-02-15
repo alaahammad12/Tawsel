@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 
 class currentorder extends StatefulWidget {
   const currentorder({super.key});
@@ -89,7 +90,9 @@ class _currentorderState extends State<currentorder> {
                         color: Color.fromARGB(255, 241, 244, 243),
                         borderRadius: BorderRadius.circular(6)),
                     child: TextButton(
-                        onPressed: (() {}),
+                        onPressed: (() {
+                          Get.toNamed("/order_Details");
+                        }),
                         child: Text(
                           "عرض التفاصيل",
                           style: TextStyle(

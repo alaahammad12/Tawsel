@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:tawsel/config/pages_name.dart';
 import 'package:tawsel/ui/screens/homepage/home_page_component/homepage_title.dart';
 import 'package:tawsel/ui/screens/homepage/homepage.dart';
-import 'package:tawsel/ui/screens/orderDetails_component/order_Details.dart';
+import 'package:tawsel/ui/screens/orderDetails/order_Details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +16,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'tawsel'),
+      getPages: PagesNames.listOfPages,
     );
   }
 }
