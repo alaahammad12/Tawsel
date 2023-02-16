@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
+import 'package:tawsel/config/colors.dart';
 
 class currentorder extends StatefulWidget {
   const currentorder({super.key});
@@ -42,7 +43,7 @@ class _currentorderState extends State<currentorder> {
                       Text(
                         "قيد التوصيل ",
                         style: TextStyle(
-                            color: Color.fromARGB(255, 255, 102, 0),
+                            color: colors.orange,
                             fontSize: 20,
                             fontFamily: 'Cairo-Bold'),
                       ),
@@ -61,8 +62,7 @@ class _currentorderState extends State<currentorder> {
                     children: [
                       Text("شارع44 -السبتيه- القاهره",
                           style: TextStyle(fontFamily: 'Cairo-Bold')),
-                      Icon(Icons.location_pin,
-                          color: Color.fromARGB(255, 255, 102, 0)),
+                      Icon(Icons.location_pin, color: colors.orange),
                     ],
                   ),
                   Row(
@@ -87,7 +87,7 @@ class _currentorderState extends State<currentorder> {
                   Container(
                     padding: EdgeInsets.only(left: 100, right: 100),
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 241, 244, 243),
+                        color: colors.statesbar_grey,
                         borderRadius: BorderRadius.circular(6)),
                     child: TextButton(
                         onPressed: (() {

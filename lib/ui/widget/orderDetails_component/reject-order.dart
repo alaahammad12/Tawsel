@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tawsel/config/colors.dart';
 
 class reject_order extends StatefulWidget {
   const reject_order({super.key});
@@ -43,7 +44,7 @@ class _reject_orderState extends State<reject_order> {
                 width: width * 0.14,
                 height: height * 0.07,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 253, 212, 212),
+                  color: colors.shado_red,
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: Image(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tawsel/config/colors.dart';
 
 class order extends StatefulWidget {
   const order({super.key});
@@ -15,13 +16,13 @@ class _orderState extends State<order> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 244, 243),
+        backgroundColor: colors.statesbar_grey,
         body: Padding(
           padding: const EdgeInsets.only(left: 15, right: 15),
           child: Container(
             height: height * 0.3,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
@@ -53,7 +54,7 @@ class _orderState extends State<order> {
                             child: Container(
                               padding: EdgeInsets.only(left: 15, right: 15),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 102, 0),
+                                  color: colors.orange,
                                   borderRadius: BorderRadius.circular(6)),
                               child: TextButton(
                                   onPressed: (() {}),

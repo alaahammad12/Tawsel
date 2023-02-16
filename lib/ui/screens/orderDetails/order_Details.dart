@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
-import 'package:tawsel/ui/screens/homepage/home_page_component/currentorder.dart';
-import 'package:tawsel/ui/screens/homepage/home_page_component/order.dart';
-import 'package:tawsel/ui/screens/orderDetails/orderDetails_component/reject-order.dart';
+import 'package:tawsel/config/colors.dart';
+import 'package:tawsel/ui/widget/home_page_component/currentorder.dart';
+import 'package:tawsel/ui/widget/home_page_component/order.dart';
+import 'package:tawsel/ui/widget/orderDetails_component/reject-order.dart';
 
 class order_Details extends StatefulWidget {
   const order_Details({super.key});
@@ -60,7 +61,7 @@ class _order_DetailsState extends State<order_Details> {
               Container(
                 height: height * 0.3,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: colors.white,
                   borderRadius: BorderRadius.circular(18),
                 ),
                 child: Padding(
@@ -74,7 +75,7 @@ class _order_DetailsState extends State<order_Details> {
                           Text(
                             "قيد التوصيل ",
                             style: TextStyle(
-                                color: Color.fromARGB(255, 255, 102, 0),
+                                color: colors.orange,
                                 fontSize: 20,
                                 fontFamily: 'Cairo-Bold'),
                           ),
@@ -86,15 +87,14 @@ class _order_DetailsState extends State<order_Details> {
                         ],
                       ),
                       Divider(
-                        color: Colors.black,
+                        color: colors.black,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Text("شارع44 -السبتيه- القاهره",
                               style: TextStyle(fontFamily: 'Cairo-Bold')),
-                          Icon(Icons.location_pin,
-                              color: Color.fromARGB(255, 255, 102, 0)),
+                          Icon(Icons.location_pin, color: colors.orange),
                         ],
                       ),
                       Row(

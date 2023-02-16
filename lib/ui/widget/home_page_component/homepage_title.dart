@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:tawsel/config/colors.dart';
 
 class title extends StatefulWidget {
   const title({super.key});
@@ -16,7 +17,7 @@ class _titleState extends State<title> {
     double width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 244, 243),
+        backgroundColor: colors.statesbar_grey,
         body: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(

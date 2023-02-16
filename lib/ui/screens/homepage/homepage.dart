@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:tawsel/ui/screens/homepage/home_page_component/currentorder.dart';
-import 'package:tawsel/ui/screens/homepage/home_page_component/order.dart';
+import 'package:tawsel/ui/widget/home_page_component/currentorder.dart';
+import 'package:tawsel/ui/widget/home_page_component/order.dart';
 
-import 'home_page_component/homepage_title.dart';
+import '../../widget/home_page_component/homepage_title.dart';
 
 class homepage extends StatefulWidget {
   const homepage({super.key});

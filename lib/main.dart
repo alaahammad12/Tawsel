@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:tawsel/config/colors.dart';
 import 'package:tawsel/config/pages_name.dart';
-import 'package:tawsel/ui/screens/homepage/home_page_component/homepage_title.dart';
+import 'package:tawsel/ui/widget/home_page_component/homepage_title.dart';
 import 'package:tawsel/ui/screens/homepage/homepage.dart';
 import 'package:tawsel/ui/screens/orderDetails/order_Details.dart';
 
@@ -41,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Color.fromARGB(255, 241, 244, 243),
+      statusBarColor: colors.statesbar_grey,
       statusBarBrightness: Brightness.dark,
       statusBarIconBrightness: Brightness.dark,
     ));
