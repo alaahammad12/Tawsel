@@ -4,8 +4,8 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:tawsel/config/colors.dart';
 import 'package:tawsel/config/pages_name.dart';
 import 'package:tawsel/ui/widget/home_page_component/homepage_title.dart';
-import 'package:tawsel/ui/screens/homepage/homepage.dart';
-import 'package:tawsel/ui/screens/orderDetails/order_Details.dart';
+import 'package:tawsel/ui/screens/homepage.dart';
+import 'package:tawsel/ui/screens/order_Details.dart';
 
 void main() {
   runApp(const MyApp());

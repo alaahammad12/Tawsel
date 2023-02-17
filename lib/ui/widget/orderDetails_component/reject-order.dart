@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:tawsel/config/colors.dart';
+import 'package:tawsel/config/font.dart';
 
 class reject_order extends StatefulWidget {
   const reject_order({super.key});
@@ -30,12 +31,13 @@ class _reject_orderState extends State<reject_order> {
                 children: [
                   Text(
                     "سبب الالغاء",
-                    style:
-                        TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+                    style: TextStyle(
+                        fontFamily: Fonts.cairo_extraBold, fontSize: 20),
                   ),
                   Text(
                     "العميل رفض الطلب",
-                    style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18),
+                    style: TextStyle(
+                        fontFamily: Fonts.cairo_Regular, fontSize: 18),
                   )
                 ],
               ),
@@ -54,55 +56,58 @@ class _reject_orderState extends State<reject_order> {
         ),
         Text(
           "تفاصيل الطلب",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           "المنتجات",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("ج.م 60",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20)),
+                style:
+                    TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20)),
             Text("بيتزا ايطالي -جبن:",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18))
+                style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 18))
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("ج.م 60",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20)),
+                style:
+                    TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20)),
             Text("كريب شيش طاووق:",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18))
+                style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 18))
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("ج.م 60",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20)),
+                style:
+                    TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20)),
             Text("برجر لحوم-حار:",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18))
+                style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 18))
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("ج.م 120",
-                style: TextStyle(fontFamily: 'Cairo-Bold', fontSize: 20)),
+                style: TextStyle(fontFamily: Fonts.cairo_Bold, fontSize: 20)),
             Text("السعر الكلي:",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18))
+                style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 18))
           ],
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("ج.م 40",
-                style: TextStyle(fontFamily: 'Cairo-Bold', fontSize: 20)),
+                style: TextStyle(fontFamily: Fonts.cairo_Bold, fontSize: 20)),
             Text("خدمه التوصيل:",
-                style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 18))
+                style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 18))
           ],
         ),
         Divider(
@@ -110,39 +115,39 @@ class _reject_orderState extends State<reject_order> {
         ),
         Text(
           "بيانات العميل",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           "اسم العميل",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           "ابراهيم خالد احمد",
-          style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20),
         ),
         Text(
           "عنوان العميل",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           " شارع44 -السبتيه- القاهره",
-          style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20),
         ),
         Text(
           "طريقه الدفع",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           "تم الدفع بالفيزا",
-          style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20),
         ),
         Text(
           "رقم العميل",
-          style: TextStyle(fontFamily: 'Cairo-ExtraBold', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_extraBold, fontSize: 20),
         ),
         Text(
           " 0145220515",
-          style: TextStyle(fontFamily: 'Cairo-Regular ', fontSize: 20),
+          style: TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 20),
         ),
         OutlinedButton(
             onPressed: (() {}),
@@ -151,7 +156,8 @@ class _reject_orderState extends State<reject_order> {
               children: [
                 Text(
                   "اتصال بالعميل ",
-                  style: TextStyle(fontFamily: 'Cairo-Regular', fontSize: 15),
+                  style:
+                      TextStyle(fontFamily: Fonts.cairo_Regular, fontSize: 15),
                 ),
                 Image(image: AssetImage("asset/Fonts/Icons/phone-call.png"))
               ],

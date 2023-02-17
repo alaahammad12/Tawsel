@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:tawsel/config/colors.dart';
 
+import '../../../config/font.dart';
+
 class title extends StatefulWidget {
   const title({super.key});
 
@@ -39,12 +41,13 @@ class _titleState extends State<title> {
                       Text(
                         "كرسبي&كرانشي",
                         style: TextStyle(
-                            fontSize: 20, fontFamily: 'Cairo-Regular'),
+                            fontSize: 20, fontFamily: Fonts.cairo_Regular),
                       ),
                       Row(
                         children: [
                           Text("شارع10 -باب الشعريه- القاهره",
-                              style: TextStyle(fontFamily: 'Cairo-Regular')),
+                              style:
+                                  TextStyle(fontFamily: Fonts.cairo_Regular)),
                           Icon(Icons.location_pin),
                         ],
                       )

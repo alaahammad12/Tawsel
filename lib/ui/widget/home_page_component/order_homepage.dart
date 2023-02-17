@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 import 'package:tawsel/config/colors.dart';
+import 'package:tawsel/config/font.dart';
+import 'package:tawsel/ui/screens/orders.dart';
 
-class order extends StatefulWidget {
-  const order({super.key});
-
-  @override
-  State<order> createState() => _orderState();
-}
-
-class _orderState extends State<order> {
+class order_homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -44,11 +40,12 @@ class _orderState extends State<order> {
                           Text(
                             "استلم فلوسك",
                             style: TextStyle(
-                                fontSize: 23, fontFamily: 'Cairo-SemiBold'),
+                                fontSize: 23, fontFamily: Fonts.cairo_semiBold),
                           ),
                           Text("والتوصيل علينا",
                               style: TextStyle(
-                                  fontSize: 23, fontFamily: 'Cairo-SemiBold')),
+                                  fontSize: 23,
+                                  fontFamily: Fonts.cairo_semiBold)),
                           Padding(
                             padding: const EdgeInsets.only(top: 15),
                             child: Container(
@@ -57,13 +54,15 @@ class _orderState extends State<order> {
                                   color: colors.orange,
                                   borderRadius: BorderRadius.circular(6)),
                               child: TextButton(
-                                  onPressed: (() {}),
+                                  onPressed: (() {
+                                    Get.to(orderr());
+                                  }),
                                   child: Text(
                                     "اطلب دلوقتي",
                                     style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 15,
-                                        fontFamily: 'Cairo-Regular'),
+                                        fontFamily: Fonts.cairo_Regular),
                                   )),
                             ),
                           )
